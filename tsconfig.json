@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "noUncheckedIndexedAccess": true,
+    "target": "ESNext",
+    "incremental": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "CommonJS",
+    "typeRoots": ["@types", "./node_modules/@types"],
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false
+  },
+  "exclude": ["node_modules", "**/dist/*"]
+}
