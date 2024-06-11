@@ -11,7 +11,7 @@ This tool allows you to check Discord tokens and provides information such as wh
 
 ## Prerequisites
 
-- Node.js installed on your machine
+- [Node.js](https://nodejs.org/) installed on your machine
 - npm (Node Package Manager)
 
 ## Installation
