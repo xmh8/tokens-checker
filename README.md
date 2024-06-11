@@ -20,7 +20,7 @@ For Windows:
 
 1. Download or clone this repository.
 2. Navigate to the project directory in your terminal.
-3. Run the following command to install the necessary packages and create a start script:
+3. Run the following file to install the necessary packages and create a start script:
 
    ```cmd
    install.bat
@@ -28,7 +28,7 @@ For Windows:
 
 ## Usage
 
-To start the tool, run the following command:
+To start the tool, run the following file:
 
 ```cmd
 start.bat
@@ -36,4 +36,4 @@ start.bat
 
 ## Contact
 
-For any questions or support, you can contact me on Discord: **@mh8**.
+For any questions or support, you can contact me on Discord: " **@mh8.** "
