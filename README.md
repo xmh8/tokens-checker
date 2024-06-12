@@ -28,11 +28,15 @@ For Windows:
 
 ## Usage
 
-To start the tool, run the following file:
+- Firstly, you need to put the tokens in **input/tokens.txt**.
+
+- To start the tool, run the following file:
 
 ```cmd
 start.bat
 ```
+
+- Then, the tool will check them and put the valid tokens in **output/valid.txt** and the invalid tokens in **output/invalid.txt**.
 
 ## Contact
 
