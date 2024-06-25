@@ -25,14 +25,15 @@ async function run() {
   console.log(`${date()} ${chalk.red.bold(`Checking ${chalk.blue(`${tokens.length}`)} tokens..`)}`);
   console.log();
 
-  process.title = `Tokens Checker | ${tokens.length} Tokens | https://github.com/xmh8`;
-
   let stats = {
     valid: 0,
+    invalid: 0,
     nitro: 0,
     verified: 0,
     phone: 0,
   };
+
+  process.title = `Tokens Checker | ${tokens.length} Tokens | ${stats.valid} Valid - ${stats.invalid} Invalid - ${stats.nitro} Nitro - ${stats.verified} Verfied - ${stats.phone} Phone | https://github.com/xmh8`;
 
   let startTimestamp = Date.now();
 
@@ -57,12 +58,17 @@ async function run() {
           } | Nitro: ${user.premium_type == 2 ? chalk.green.bold("true") : chalk.red.bold("false")}`
         )}`
       );
+
+      process.title = `Tokens Checker | ${tokens.length} Tokens | ${stats.valid} Valid - ${stats.invalid} Invalid - ${stats.nitro} Nitro - ${stats.verified} Verfied - ${stats.phone} Phone | https://github.com/xmh8`;
     } else {
       try {
         appendFileSync("output/invalid.txt", tokens[i] + "\n");
       } catch {}
 
+      stats.invalid++;
+
       console.log(`${date()} ${chalk.red.bold("Invalid")} >>> [${chalk.red.bold(tokens[i])}]`);
+      process.title = `Tokens Checker | ${tokens.length} Tokens | ${stats.valid} Valid - ${stats.invalid} Invalid - ${stats.nitro} Nitro - ${stats.verified} Verfied - ${stats.phone} Phone | https://github.com/xmh8`;
     }
   }
 
